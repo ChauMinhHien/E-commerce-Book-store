@@ -45,8 +45,8 @@ foreach($_SESSION['cart'] as $book_id=>$item){
     $mail->SMTPSecure = "tls";
     $mail->Port       = 587;
     $mail->Host       = "smtp.gmail.com";
-    $mail->Username   = "tbnrfrag12345@gmail.com";
-    $mail->Password   = "Pleasedontcopymypassword";
+    $mail->Username   = "sample-mail@gmail.com";
+    $mail->Password   = "SamplePassword";
     $mail->IsHTML(true);
     $mail->AddAddress($_SESSION['info']['email'], $_SESSION['info']['email']);
     $mail->SetFrom("no-reply@BookLibrary.com", "Book Library Delivery");
